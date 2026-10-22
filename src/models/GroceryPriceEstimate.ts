@@ -1,0 +1,1 @@
+import { Schema,model,models } from "mongoose"; const S=new Schema({foodName:{type:String,unique:true},unit:String,estimatedPriceINR:Number,updatedAt:Date});export default models.GroceryPriceEstimate||model("GroceryPriceEstimate",S);

@@ -1,0 +1,2 @@
+import Link from "next/link"; import { Sidebar } from "@/components/Sidebar"; import { Bell } from "lucide-react";
+export default function UserLayout({children}:{children:React.ReactNode}){return <div className="app-shell"><Sidebar/><main className="app-main"><header className="app-top"><div><b>FreshWise workspace</b><div className="muted" style={{fontSize:12}}>Eat smart. Waste less.</div></div><Link href="/notifications" className="btn btn-secondary" aria-label="Notifications"><Bell size={18}/></Link></header><div className="app-content">{children}</div></main></div>}

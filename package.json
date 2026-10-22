@@ -1,0 +1,44 @@
+{
+  "name": "freshwise-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "seed": "tsx scripts/seed.ts",
+    "secret": "node scripts/generate-password.js"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "bcryptjs": "^3.0.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.468.0",
+    "mongoose": "^8.19.1",
+    "next": "^15.5.7",
+    "next-auth": "^4.24.11",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.65.0",
+    "recharts": "^3.2.1",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.20.6",
+    "typescript": "^5.7.2",
+    "vitest": "^4.0.3"
+  }
+}

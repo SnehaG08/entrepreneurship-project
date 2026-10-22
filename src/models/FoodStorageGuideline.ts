@@ -1,0 +1,1 @@
+import { Schema,model,models } from "mongoose"; const S=new Schema({foodName:String,storageLocation:String,minDays:Number,maxDays:Number,sourceNote:String},{timestamps:true});S.index({foodName:1,storageLocation:1},{unique:true});export default models.FoodStorageGuideline||model("FoodStorageGuideline",S);

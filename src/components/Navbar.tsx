@@ -1,0 +1,2 @@
+import Link from "next/link"; import { Logo } from "./Logo";
+export function Navbar(){return <header className="navbar"><div className="container navbar-inner"><Logo/><nav className="navlinks"><Link href="/">Home</Link><Link href="/features">Features</Link><Link href="/how-it-works">How it works</Link><Link href="/about">About</Link><Link href="/login">Log in</Link><Link className="btn btn-primary" href="/register">Get started</Link></nav></div></header>}

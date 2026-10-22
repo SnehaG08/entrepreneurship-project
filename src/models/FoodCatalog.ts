@@ -1,0 +1,1 @@
+import { Schema,model,models } from "mongoose"; const S=new Schema({name:{type:String,unique:true},category:String,defaultUnit:String,caloriesPer100g:Number,proteinPer100g:Number,carbsPer100g:Number,fatPer100g:Number,fiberPer100g:Number});export default models.FoodCatalog||model("FoodCatalog",S);

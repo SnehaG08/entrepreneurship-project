@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function Logo({ href = "/" }: { href?: string }) { return <Link href={href} className="brand"><svg className="logo" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#DCFCE7"/><path d="M12 25.5c6.5 0 11.5 3.1 12 11.5-7.8.4-12-3.8-12-11.5Z" fill="#16A34A"/><path d="M36 10c.5 11-4.5 17.5-14.5 18 0-10 5.3-16 14.5-18Z" fill="#166534"/><path d="M22 35c1-9 4-14 11-19" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round"/></svg><span>FreshWise <b style={{color:"#21b357"}}>AI</b></span></Link> }

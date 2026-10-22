@@ -1,0 +1,2 @@
+import { NextResponse } from "next/server"; import { connectDB } from "@/lib/db"; import { requireUser } from "@/lib/api"; import Inventory from "@/models/Inventory"; import { getFreshness } from "@/lib/freshnessEngine";
+export async function GET() { const a = await requireUser(); if (a.error) return a.error; await connectDB(); const items = await Inventory.find({ userId: a.session!.user.id, status: { $ne: "depleted" } }).lean(); return NextResponse.json(items.map(x => ({ ...x, freshness: getFreshness(x as any) })).sort((x, y) => y.freshness.score - x.freshness.score)); }

@@ -1,0 +1,1 @@
+import { Schema,model,models } from "mongoose"; const S=new Schema({userId:{type:Schema.Types.ObjectId,ref:"User",index:true,required:true},inventoryId:Schema.Types.ObjectId,foodName:String,quantity:Number,unit:String,reason:String,estimatedCost:Number,date:{type:Date,default:Date.now}},{timestamps:true});export default models.WasteLog||model("WasteLog",S);

@@ -1,0 +1,1 @@
+import { Schema,model,models } from "mongoose"; const S=new Schema({userId:{type:Schema.Types.ObjectId,ref:"User",index:true,required:true},date:{type:Date,default:Date.now},mealName:String,calories:Number,protein:Number,carbs:Number,fat:Number,fiber:Number,source:{type:String,default:"manual"}},{timestamps:true});export default models.NutritionLog||model("NutritionLog",S);

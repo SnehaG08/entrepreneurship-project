@@ -1,0 +1,1 @@
+import { Logo } from "./Logo"; export function Footer(){return <footer className="footer"><div className="container footer-row"><Logo/><span>Eat Smart. Waste Less. Live Better.</span><span>© 2026 FreshWise AI</span></div></footer>}
